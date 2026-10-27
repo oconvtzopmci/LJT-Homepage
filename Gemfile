@@ -1,5 +1,15 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "csv"
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-include-cache", group: :jekyll_plugins
+group :jekyll_plugins do
+  gem 'jekyll', '~> 4.4.1'
+  gem 'jekyll-feed'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-redirect-from'
+  gem 'jekyll-gist'
+  gem 'jekyll-paginate'
+  gem 'jemoji'
+  gem 'jekyll-include-cache'
+end
+
+gem 'kramdown'
+gem 'kramdown-parser-gfm'
