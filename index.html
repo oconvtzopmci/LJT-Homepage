@@ -1,0 +1,44 @@
+---
+layout: single
+permalink: /
+title: Junteng Liu
+author_profile: true
+---
+
+<p>
+  I am a first-year PhD candidate in Computer Science at the
+  <a href="https://hkust.edu.hk/">Hong Kong University of Science and Technology</a>,
+  where I work in the <a href="https://hkust-nlp.github.io/">HKUST NLP Group</a>
+  with Professor <a href="https://jxhe.github.io/">Junxian He</a>.
+  My research focuses on natural language processing and machine learning.
+</p>
+
+<h2 id="research-interests">Research Interests</h2>
+<ul>
+  <li>LLM reasoning and reinforcement learning</li>
+  <li>LLM truthfulness and interpretability</li>
+  <li>Hallucination in vision-language models</li>
+</ul>
+
+<section class="publications-section" aria-labelledby="selected-publications">
+  <div class="section-heading">
+    <h2 id="selected-publications">Selected Publications</h2>
+    <p><a href="{{ '/publications/' | relative_url }}">View the dedicated publications page</a></p>
+  </div>
+
+  {% assign homepage_publications = site.publications | sort: "date" | reverse %}
+  <ol class="archive">
+    {% for publication in homepage_publications limit: 6 %}
+      <li class="archive__item">
+        <h3 class="archive__item-title">
+          <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
+        </h3>
+        <p class="page__meta">
+          {{ publication.authors | replace: ";", "," }}<br>
+          <em>{{ publication.venue }}</em>, {{ publication.date | date: "%Y" }}
+        </p>
+        {{ publication.content | markdownify }}
+      </li>
+    {% endfor %}
+  </ol>
+</section>

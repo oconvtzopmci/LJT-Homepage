@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    outputs:
+      pages_enabled: ${{ steps.pages.outcome == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,6 +36,7 @@ jobs:
 
       - name: Configure GitHub Pages
         id: pages
+        continue-on-error: true
         uses: actions/configure-pages@v6.0.0
         with:
           enablement: true
@@ -49,12 +52,34 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Verify publications on homepage and publications page
+        run: |
+          set -e
+          test -f _site/index.html
+          test -f _site/publications/index.html
+
+          titles=(
+            "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond"
+            "On the Perception Bottleneck of VLMs for Chart Understanding"
+            "On the Universal Truthfulness Hyperplane Inside LLMs"
+            "In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation"
+            "C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models"
+            "Composing Parameter-Efficient Modules with Arithmetic Operations"
+          )
+
+          for title in "${titles[@]}"; do
+            grep -Fq "$title" _site/index.html
+            grep -Fq "$title" _site/publications/index.html
+          done
+
       - name: Upload GitHub Pages artifact
+        if: steps.pages.outcome == 'success'
         uses: actions/upload-pages-artifact@v3
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    if: needs.build.outputs.pages_enabled == 'true'
     environment:
       name: github-pages
       url: https://oconvtzopmci.github.io/LJT-Homepage/
