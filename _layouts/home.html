@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 id="page-title" class="page__title">{{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+    {% endunless %}
+
+    {{ content }}
+
+    <section class="publications-section" aria-labelledby="selected-publications">
+      <h2 id="selected-publications">Selected Publications</h2>
+      <p><a href="{{ '/publications/' | relative_url }}">View the dedicated publications page</a></p>
+
+      {% assign homepage_publications = site.publications | sort: "date" | reverse %}
+      <ol class="archive">
+        {% for publication in homepage_publications limit: 6 %}
+          <li class="archive__item">
+            <h3 class="archive__item-title">
+              <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
+            </h3>
+            <p class="page__meta">
+              {{ publication.authors | replace: ";", "," }}<br>
+              <em>{{ publication.venue }}</em>, {{ publication.date | date: "%Y" }}
+            </p>
+            {{ publication.content | markdownify }}
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    {% if paginator %}
+      {% assign posts = paginator.posts %}
+    {% elsif site.paginate %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+
+    {%- for post in posts -%}
+      {% include archive-single.html %}
+    {%- endfor -%}
+
+    {% include paginator.html %}
+  </div>
+</div>
