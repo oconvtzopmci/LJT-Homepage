@@ -1,18 +1,14 @@
 title: Junteng Liu
 title_separator: "-"
-subtitle: PhD Candidate in Computer Science, HKUST NLP Group
+subtitle: First-year PhD candidate, HKUST NLP Group
 name: &name Junteng Liu
 url: https://oconvtzopmci.github.io
 baseurl: /LJT-Homepage
-description: Junteng Liu is a PhD candidate in the HKUST NLP Group, working on natural language processing, machine learning, LLM reasoning, reinforcement learning, truthfulness, interpretability, and vision-language model hallucination.
+description: Personal academic homepage for Junteng Liu, a first-year PhD candidate at HKUST NLP Group whose research focuses on natural language processing and machine learning.
 repository: oconvtzopmci/LJT-Homepage
 
 author:
   name: *name
-  avatar: profile.png
-  bio: PhD candidate in Computer Science at HKUST NLP Group.
-  location: Hong Kong
-  employer: Hong Kong University of Science and Technology
   email: jliugi@connect.ust.hk
   github: Vicent0205
   googlescholar: https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate
@@ -100,7 +96,6 @@ permalink: /:categories/:title/
 paginate: 5
 paginate_path: /page:num/
 timezone: Asia/Hong_Kong
-
 future: true
 
 category_archive:
