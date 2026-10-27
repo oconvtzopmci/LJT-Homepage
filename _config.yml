@@ -37,8 +37,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-theme: minimal-mistakes-jekyll
-
 collections:
   publications:
     output: true
