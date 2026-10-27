@@ -52,11 +52,13 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Verify native template pages and publications
+      - name: Verify native home layout and publications page
         run: |
-          set -e
+          set -euo pipefail
           test ! -e index.html
           test -f _layouts/home.html
+          grep -Fq 'site.publications' _layouts/home.html
+          grep -Fq 'Selected Publications' _layouts/home.html
           test -f _site/publications/index.html
 
           titles=(
@@ -68,10 +70,27 @@ jobs:
             "Composing Parameter-Efficient Modules with Arithmetic Operations"
           )
 
+          cat > index.html <<'EOF'
+          ---
+          layout: home
+          title: Junteng Liu
+          author_profile: true
+          ---
+          EOF
+
+          bundle exec jekyll build \
+            --baseurl /LJT-Homepage \
+            --destination _home_layout_test \
+            > /tmp/home-layout-build.log 2>&1
+          test -f _home_layout_test/index.html
+
           for title in "${titles[@]}"; do
-            grep -Fq "$title" _layouts/home.html
+            grep -Fq "$title" _home_layout_test/index.html
             grep -Fq "$title" _site/publications/index.html
           done
+
+          rm index.html
+          rm -rf _home_layout_test
 
       - name: Upload GitHub Pages artifact
         if: steps.pages.outcome == 'success'
