@@ -1,19 +1,30 @@
 title: Junteng Liu
 title_separator: "-"
 subtitle: First-year PhD candidate, HKUST NLP Group
-name: &name Junteng Liu
+name: Junteng Liu
 url: https://oconvtzopmci.github.io
 baseurl: /LJT-Homepage
-description: Personal academic homepage for Junteng Liu, a first-year PhD candidate at HKUST NLP Group whose research focuses on natural language processing and machine learning.
+description: Personal academic homepage of Junteng Liu, first-year PhD candidate at HKUST NLP Group.
 repository: oconvtzopmci/LJT-Homepage
 
 author:
-  name: *name
+  name: Junteng Liu
+  avatar: "https://github.com/Vicent0205.png"
+  bio: First-year PhD candidate at HKUST NLP Group
+  employer: HKUST NLP Group
   email: jliugi@connect.ust.hk
   github: Vicent0205
-  googlescholar: https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate
-  google_scholar: https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate
+  googlescholar: "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
   twitter: junteng88716710
+
+publication_category:
+  preprints:
+    title: 'Preprints'
+  conferences:
+    title: 'Conference Papers'
+
+twitter:
+  username: junteng88716710
 
 include:
   - _pages
@@ -25,13 +36,15 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 collections:
   publications:
@@ -95,7 +108,7 @@ defaults:
 permalink: /:categories/:title/
 paginate: 5
 paginate_path: /page:num/
-timezone: Asia/Hong_Kong
+timezone: Etc/UTC
 future: true
 
 category_archive:

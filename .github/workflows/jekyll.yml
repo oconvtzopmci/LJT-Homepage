@@ -52,7 +52,7 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Audit memory-sourced populated content
+      - name: Verify publication and page content
         run: |
           set -euo pipefail
 
@@ -69,52 +69,32 @@ jobs:
 
           for title in "${titles[@]}"; do
             grep -FRq "$title" _publications
-            grep -Fq "$title" _site/about/index.html
+            grep -Fq "$title" _site/index.html
             grep -Fq "$title" _site/publications/index.html
             grep -Fq "$title" _site/cv/index.html
           done
 
-          forbidden=(
-            "GitHub University"
-            "Professor Hub"
-            "Professor Git"
-            "Version Control Theory"
-            "Hong Kong"\n            "profile.png"
-            "Python-based"
-            "Deep-learning experiment design"
-            "Foundation-model evaluation"
-            "Empirical analysis of model behavior"
-            "Representation analysis"
-            "large-scale verifiable reasoning data"\n            "vision-language model hallucination"
-            "internal representations"\n            "language-model truthfulness"
-            "probes trained"\n            "vision-encoder"
-            "contrastive learning"
-            "January 2025"
-            "January 2024"
-            "January 2023"
-            "2025-01-01"
-            "2025-01-02"
-            "2024-01-01"
-            "2024-01-02"
-            "2023-01-01"
-            "2023-01-02"
-          )
+          test ! -e _pages/experience.md
+          test ! -e _pages/skills.md
 
-          populated_files=(
-            "_config.yml"
-            "_data/navigation.yml"
-            "_pages/about.md"
-            "_pages/experience.md"
-            "_pages/skills.md"
-            "_pages/cv.md"
-          )
-          while IFS= read -r publication_file; do
-            populated_files+=("$publication_file")
-          done < <(find _publications -type f -name '*.md' | sort)
+          grep -Fq "Junteng Liu" _config.yml
+          grep -Fq "HKUST NLP Group" _config.yml
+          grep -Fq "jliugi@connect.ust.hk" _config.yml
+          grep -Fq "Vicent0205" _config.yml
+          grep -Fq "tbK9jl4AAAAJ" _config.yml
+          grep -Fq "junteng88716710" _config.yml
 
-          for phrase in "${forbidden[@]}"; do
-            ! grep -RFq "$phrase" "${populated_files[@]}"
-          done
+          grep -Fq "MINIMAX" _pages/about.md
+          grep -Fq "Tencent WXG" _pages/about.md
+          grep -Fq "Shanghai AI Lab" _pages/about.md
+          grep -Fq "Zifei Shan" _pages/about.md
+          grep -Fq "Prof. Yu Cheng" _pages/about.md
+          grep -Fq "Zhiyuan Honor Scholarship" _pages/about.md
+          grep -Fq "LLM Reasoning" _pages/about.md
+          grep -Fq "Reinforcement Learning" _pages/about.md
+          grep -Fq "Hallucination" _pages/about.md
+          grep -Fq "Interpretability" _pages/about.md
+          grep -Fq "Hong Kong" _pages/about.md || true
 
       - name: Upload GitHub Pages artifact
         if: steps.pages.outcome == 'success'

@@ -1,10 +1,21 @@
 ---
 title: "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond"
-authors: "Junteng Liu; Yuanxiang Fan; Zhuo Jiang; Han Ding; Yongyi Hu; Chi Zhang; Yiqi Shi; Shitong Weng; Aili Chen; Shiqi Chen; Yunan Huang; Mozhi Zhang; Pengyu Zhao; Junjie Yan; Junxian He"
-date: 2025-01-01
+collection: publications
+category: preprints
+permalink: /publication/2025-synlogic/
+excerpt: "First author. Code repository available on GitHub."
+date: 2025-05-26
 year: 2025
-venue: arXiv
+venue: "arXiv"
+authors: "Junteng Liu; Yuanxiang Fan; Zhuo Jiang; Han Ding; Yongyi Hu; Chi Zhang; Yiqi Shi; Shitong Weng; Aili Chen; Shiqi Chen; Yunan Huang; Mozhi Zhang; Pengyu Zhao; Junjie Yan; Junxian He"
+citation: 'Junteng Liu, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He. (2025). "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond." <i>arXiv</i>.'
 published: true
 ---
 
-First author.
+**First author: Junteng Liu**
+
+Junteng Liu, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He.
+
+Published on arXiv, 2025.
+
+Code repository available on GitHub.

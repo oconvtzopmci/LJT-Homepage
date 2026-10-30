@@ -9,20 +9,36 @@ redirect_from:
 
 {% include base_path %}
 
+I am a first-year PhD candidate at the HKUST NLP Group, supervised by Professor Junxian He. My research focuses on natural language processing and machine learning.
+
 ## Education
 
-- Ph.D. in Computer Science, Hong Kong University of Science and Technology, 2024-present
-- B.Eng., Shanghai Jiao Tong University, 2020-2024
+- **Ph.D. in Computer Science**, HKUST, 2024–Present. Supervisor: Professor Junxian He.
+- **B.Eng.**, Shanghai Jiao Tong University (SJTU), 2020–2024. Graduated in June 2024.
+- **Zhiyuan Honor Scholarship**, Shanghai Jiao Tong University.
 
 ## Research Experience
 
-- Research Intern, MINIMAX, February 2025-present
-- Research Intern, Tencent WXG, June 2024-September 2024
-- Research Intern, Shanghai AI Lab, June 2023-December 2023
+- **Research Intern**, MINIMAX, February 2025–Present.
+- **Research Intern**, Tencent WXG, June 2024–September 2024. Advisor: Zifei Shan.
+- **Research Intern**, Shanghai AI Lab, June 2023–December 2023. Advisor: Prof. Yu Cheng.
 
-## Honors
+## Research Interests
 
-- Zhiyuan Honor Scholarship, Shanghai Jiao Tong University
+- LLM Reasoning and Reinforcement Learning
+- Hallucination in Vision-Language Models (VLM)
+- LLM truthfulness and Interpretability
+
+## Skills
+
+- Natural Language Processing (NLP)
+- Machine Learning (ML)
+- LLM Reasoning
+- Reinforcement Learning (RL)
+- Vision-Language Models (VLM)
+- Hallucination in Vision-Language Models
+- LLM Truthfulness
+- Interpretability
 
 ## Publications
 
@@ -34,7 +50,7 @@ redirect_from:
 
 ## Contact
 
-- Email: [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
-- GitHub: [Vicent0205](https://github.com/Vicent0205)
-- Google Scholar: [Profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
-- X: [@junteng88716710](https://twitter.com/junteng88716710)
+- **Email**: [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
+- **GitHub**: [Vicent0205](https://github.com/Vicent0205)
+- **Google Scholar**: [Profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
+- **X (Twitter)**: [@junteng88716710](https://twitter.com/junteng88716710)
