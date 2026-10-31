@@ -13,15 +13,15 @@ I am a first-year PhD candidate at the HKUST NLP Group, supervised by Professor 
 
 ## Education
 
-- **Ph.D. in Computer Science**, HKUST, 2024–Present. Supervisor: Professor Junxian He.
-- **B.Eng.**, Shanghai Jiao Tong University (SJTU), 2020–2024. Graduated in June 2024.
-- **Zhiyuan Honor Scholarship**, Shanghai Jiao Tong University.
+- **Ph.D. in Computer Science (2024-Present)** at HKUST. Supervisor: Professor Junxian He.
+- **B.Eng. (2020-2024)** at Shanghai Jiao Tong University (SJTU). Graduated in June 2024.
+- **Zhiyuan Honor Scholarship** at Shanghai Jiao Tong University.
 
 ## Research Experience
 
-- **Research Intern**, MINIMAX, February 2025–Present.
-- **Research Intern**, Tencent WXG, June 2024–September 2024. Advisor: Zifei Shan.
-- **Research Intern**, Shanghai AI Lab, June 2023–December 2023. Advisor: Prof. Yu Cheng.
+- **Research Intern at MINIMAX** (February 2025 - Present).
+- **Research Intern at Tencent WXG** (June 2024 - September 2024). Advisor: Zifei Shan.
+- **Research Intern at Shanghai AI Lab** (June 2023 - December 2023). Advisor: Prof. Yu Cheng.
 
 ## Research Interests
 
@@ -50,7 +50,7 @@ I am a first-year PhD candidate at the HKUST NLP Group, supervised by Professor 
 
 ## Contact
 
-- **Email**: [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
-- **GitHub**: [Vicent0205](https://github.com/Vicent0205)
-- **Google Scholar**: [Profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
-- **X (Twitter)**: [@junteng88716710](https://twitter.com/junteng88716710)
+- Email: jliugi@connect.ust.hk
+- GitHub: Vicent0205 (<https://github.com/Vicent0205>)
+- Google Scholar profile: <https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate>
+- X (Twitter): @junteng88716710 (<https://twitter.com/junteng88716710>)
