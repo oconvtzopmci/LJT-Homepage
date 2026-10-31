@@ -94,7 +94,6 @@ jobs:
           grep -Fq "Reinforcement Learning" _pages/about.md
           grep -Fq "Hallucination" _pages/about.md
           grep -Fq "Interpretability" _pages/about.md
-          grep -Fq "Hong Kong" _pages/about.md || true
 
       - name: Upload GitHub Pages artifact
         if: steps.pages.outcome == 'success'
