@@ -4,13 +4,13 @@ subtitle: First-year PhD candidate, HKUST NLP Group
 name: Junteng Liu
 url: https://oconvtzopmci.github.io
 baseurl: /LJT-Homepage
-description: Personal academic homepage of Junteng Liu, first-year PhD candidate at HKUST NLP Group, researching natural language processing and machine learning.
+description: Junteng Liu is a first-year PhD candidate at the HKUST NLP Group. His research focuses on natural language processing and machine learning.
 repository: oconvtzopmci/LJT-Homepage
 
 author:
   name: Junteng Liu
   avatar: "https://github.com/Vicent0205.png"
-  bio: First-year PhD candidate at HKUST NLP Group
+  bio: "First-year PhD candidate at HKUST NLP Group. Research focuses on natural language processing and machine learning; research interests include LLM Reasoning and Reinforcement Learning, Hallucination in Vision-Language Models (VLMs), and LLM Truthfulness and Interpretability."
   employer: HKUST NLP Group
   email: jliugi@connect.ust.hk
   github: Vicent0205
@@ -19,7 +19,7 @@ author:
 
 publication_category:
   preprints:
-    title: 'Preprints'
+    title: 'arXiv'
   conferences:
     title: 'Conference Papers'
 
@@ -50,15 +50,6 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-  teaching:
-    output: true
-    permalink: /:collection/:path/
 
 defaults:
   - scope:
@@ -85,25 +76,6 @@ defaults:
       author_profile: true
       share: true
       related: true
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
 
 permalink: /:categories/:title/
 paginate: 5

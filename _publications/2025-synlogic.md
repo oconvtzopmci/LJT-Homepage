@@ -4,7 +4,6 @@ collection: publications
 category: preprints
 permalink: /publication/2025-synlogic/
 excerpt: "First author. Code repository available on GitHub."
-date: 2025-05-26
 year: 2025
 venue: "arXiv"
 authors: "Junteng Liu; Yuanxiang Fan; Zhuo Jiang; Han Ding; Yongyi Hu; Chi Zhang; Yiqi Shi; Shitong Weng; Aili Chen; Shiqi Chen; Yunan Huang; Mozhi Zhang; Pengyu Zhao; Junjie Yan; Junxian He"

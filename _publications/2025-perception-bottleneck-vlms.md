@@ -4,7 +4,6 @@ collection: publications
 category: preprints
 permalink: /publication/2025-perception-bottleneck-vlms/
 excerpt: "First author. Code repository: Vision4Chart."
-date: 2025-02-04
 year: 2025
 venue: "arXiv"
 authors: "Junteng Liu; Weihao Zeng; Xiwen Zhang; Yijun Wang; Zifei Shan; Junxian He"
